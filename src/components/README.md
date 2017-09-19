@@ -1,0 +1,1 @@
+This folder serves to store all presentational / dummy components.

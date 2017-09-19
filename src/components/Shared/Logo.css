@@ -1,0 +1,21 @@
+.LogoContainer {
+  width: 140px;
+  float: left;
+  margin: 15px 0 0 50px;
+
+  opacity: 1;
+  transition: all 300ms;
+}
+
+.LogoContainer:hover {
+  opacity: 0.8;
+  transition: all 300ms;
+}
+
+.LogoContainer.Scrolled {
+  margin: 10px 0 0 50px;
+}
+
+.LogoImage {
+  width: 100%;
+}

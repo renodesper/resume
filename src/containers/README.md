@@ -1,0 +1,1 @@
+This folder serves to store all container components. These are the stateful ones, and the ones that make the API calls. If you’re using Redux, these are the ones that are connected to the store.

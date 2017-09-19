@@ -1,0 +1,1 @@
+This folder serves to store all stories for storybook. StoryBook will load all files which have "*.stories.js" as a format.
