@@ -1,4 +1,4 @@
-.LogoContainer {
+.logo {
   width: 140px;
   float: left;
   margin: 15px 0 0 50px;
@@ -7,15 +7,15 @@
   transition: all 300ms;
 }
 
-.LogoContainer:hover {
+.logo:hover {
   opacity: 0.8;
   transition: all 300ms;
 }
 
-.LogoContainer.Scrolled {
+.logo--scrolled {
   margin: 10px 0 0 50px;
 }
 
-.LogoImage {
+.logo__img {
   width: 100%;
 }

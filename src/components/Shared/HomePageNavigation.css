@@ -1,15 +1,15 @@
-.NavigationContainer {
+.navigation {
   float: right;
   margin: 15px 50px 0 0;
   transition: all 300ms;
 }
 
-.NavigationContainer.Scrolled {
+.navigation--scrolled {
   margin: 10px 50px 0 0;
   transition: all 300ms;
 }
 
-.NavigationListItem {
+.navigation__list {
   list-style-type: none;
   float: left;
   margin-right: 16px;
@@ -17,12 +17,12 @@
   transition: all 500ms;
 }
 
-.NavigationListItem:hover {
+.navigation__list:hover {
   padding-top: 3px;
   transition: all 500ms;
 }
 
-.NavigationItem {
+.navigation__list__item {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #494949;

@@ -7,14 +7,14 @@ const topOffset = 65;
 
 class HomePageNavigation extends React.Component {
   render() {
-    const navigationClass = this.props.isScrolled ? 'NavigationContainer Scrolled' : 'NavigationContainer';
+    const navigationClass = this.props.isScrolled ? 'navigation navigation--scrolled' : 'navigation';
 
     return (
       <nav className={navigationClass}>
         <ul>
-          <li className="NavigationListItem">
+          <li className="navigation__list">
             <a
-              className="NavigationItem"
+              className="navigation__list__item"
               onClick={() => {
                 scrollIntoView(document.getElementById('cover'));
               }}
@@ -23,9 +23,9 @@ class HomePageNavigation extends React.Component {
             >Home</a>
           </li>
 
-          <li className="NavigationListItem">
+          <li className="navigation__list">
             <a
-              className="NavigationItem"
+              className="navigation__list__item"
               onClick={() => {
                 scrollIntoView(document.getElementById('about'), {
                   align: { topOffset },
@@ -36,9 +36,9 @@ class HomePageNavigation extends React.Component {
             >About</a>
           </li>
 
-          <li className="NavigationListItem">
+          <li className="navigation__list">
             <a
-              className="NavigationItem"
+              className="navigation__list__item"
               onClick={() => {
                 scrollIntoView(document.getElementById('work'), {
                   align: { topOffset },
@@ -49,9 +49,9 @@ class HomePageNavigation extends React.Component {
             >Work</a>
           </li>
 
-          <li className="NavigationListItem">
+          <li className="navigation__list">
             <a
-              className="NavigationItem"
+              className="navigation__list__item"
               onClick={() => {
                 scrollIntoView(document.getElementById('contact'), {
                   align: { topOffset },

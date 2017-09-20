@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import './HomePage.css';
 
 import Header from '../components/Shared/Header';
 import Cover from '../components/HomePage/Sections/Cover';
@@ -8,12 +9,8 @@ import Work from '../components/HomePage/Sections/Work';
 import Contact from '../components/HomePage/Sections/Contact';
 import Footer from '../components/Shared/Footer';
 
-const Container = styled.div`
-  height: 100%;
-`;
-
 const HomePage = () => (
-  <Container>
+  <div className="homepage">
     {/* HEADER */}
     <Header />
 
@@ -25,6 +22,6 @@ const HomePage = () => (
 
     {/* FOOTER */}
     <Footer />
-  </Container>
+  </div>
 );
 export default HomePage;

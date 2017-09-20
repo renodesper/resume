@@ -1,0 +1,31 @@
+.cover {
+  background: url('../../../images/cover.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  min-height: calc(100% - 200px);
+}
+
+.cover__title {
+  margin: 0 auto 0 auto;
+  font-size: 110px;
+}
+
+.cover__subtitle {
+  margin: 0 auto 0 auto;
+  font-size: 25px;
+}
+
+.cover__arrow {
+  width: 32px;
+  margin-top: 150px;
+
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.cover__arrow:hover {
+  opacity: 1;
+  transition: all 200ms;
+}

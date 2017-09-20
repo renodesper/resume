@@ -1,0 +1,35 @@
+.work {
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.work__projects {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+.work__list {
+  padding: 0;
+}
+
+.work__list__item {
+  width: 33.3%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.work__img {
+  width: 280px;
+  height: 170px;
+  border-radius: 5px;
+
+  transform: scale(1.0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.0);
+  transition: all 300ms;
+}
+
+.work__img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 300ms;
+}

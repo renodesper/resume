@@ -6,12 +6,12 @@ import LogoPath from '../../images/logo.png';
 
 class Logo extends React.Component {
   render() {
-    const logoClass = this.props.isScrolled ? 'LogoContainer Scrolled' : 'LogoContainer';
+    const logoClass = this.props.isScrolled ? 'logo logo--scrolled' : 'logo';
 
     return (
       <div className={logoClass}>
         <img
-          className="LogoImage"
+          className="logo__img"
           src={LogoPath}
           alt="Logo"
           onClick={() => {

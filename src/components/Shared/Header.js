@@ -24,7 +24,7 @@ class Header extends React.Component {
 
   isScrolled() {
     const { scrolled } = this.state;
-    const maxScroll = 20;
+    const maxScroll = 80;
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     // This code cause flicker:
@@ -42,7 +42,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const headerClass = this.state.scrolled ? 'HeaderContainer Scrolled' : 'HeaderContainer';
+    const headerClass = this.state.scrolled ? 'header header--scrolled' : 'header';
 
     return (
       <header className={headerClass}>

@@ -1,72 +1,8 @@
 import React from 'react';
-import { injectGlobal } from 'styled-components';
+
+import './App.css';
 
 import HomePage from './HomePage';
-
-/*
-  Global css initialization.
-  Font is imported in "public/index.html".
-*/
-injectGlobal`
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    text-align: center;
-  }
-
-  section {
-    min-height: 100%;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  h1,
-  h2,
-  h3,
-  a {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
-      color: #494949;
-      text-transform: uppercase;
-  }
-
-  h2 {
-      color: #5d7177;
-  }
-
-  h3 {
-      font-size: 40px;
-      padding-top: 4%;
-      margin-bottom: 5px;
-  }
-
-  h4,
-  p {
-      font-family: 'Roboto Slab', serif;
-      color: #494949;
-  }
-
-  hr {
-      width: 30px;
-      height: 3px;
-      background: #494949;
-      border: 0;
-      margin: 0 auto 40px auto;
-  }
-
-  #app,
-  .reactroot {
-      height: 100%;
-  }
-`;
 
 const App = () => (
   <div className="reactroot">

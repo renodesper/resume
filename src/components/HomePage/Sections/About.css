@@ -1,0 +1,24 @@
+.about {
+  min-height: 100%;
+}
+
+.about__avatar {
+  width: 200px;
+
+  transform: scale(1.0);
+  transition: all 300ms;
+}
+
+.about__avatar:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.about__name {
+  font-size: 25px;
+}
+
+.about__description {
+  width: 700px;
+  margin: 0 auto 0 auto;
+}
