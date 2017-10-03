@@ -54,7 +54,6 @@
     "test": "cross-env node scripts/test.js --env=jsdom",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

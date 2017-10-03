@@ -30,6 +30,8 @@ class Header extends React.Component {
     const status = currentScroll >= maxScroll
       ? this.props.dispatch(setHeaderTransparency(false))
       : this.props.dispatch(setHeaderTransparency(true));
+
+    return status;
   }
 
   render() {
