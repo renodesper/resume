@@ -1,0 +1,57 @@
+:global html,
+:global body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+:global section {
+    min-height: 100%;
+}
+
+:global a {
+    text-decoration: none;
+}
+
+:global li {
+    list-style-type: none;
+}
+
+:global h1,
+:global h2,
+:global h3,
+:global a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #494949;
+    text-transform: uppercase;
+}
+
+:global h2 {
+    color: #5d7177;
+}
+
+:global h3 {
+    font-size: 40px;
+    padding-top: 4%;
+    margin-bottom: 5px;
+}
+
+:global h4,
+:global p {
+    font-family: 'Roboto Slab', serif;
+    color: #494949;
+}
+
+:global hr {
+    width: 30px;
+    height: 3px;
+    background: #494949;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+:global #app {
+    height: 100%;
+}

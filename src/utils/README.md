@@ -1,1 +1,0 @@
-This folder serves to store utility functions that may be used in different places. Functions in this folder should be general and pure (if possible).

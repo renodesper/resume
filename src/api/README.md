@@ -1,1 +1,0 @@
-This folder serves to store all API related code.

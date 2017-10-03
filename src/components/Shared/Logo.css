@@ -1,4 +1,4 @@
-.logo {
+.container {
   width: 140px;
   float: left;
   margin: 15px 0 0 50px;
@@ -7,15 +7,15 @@
   transition: all 300ms;
 }
 
-.logo:hover {
+.container:hover {
   opacity: 0.8;
   transition: all 300ms;
 }
 
-.logo--scrolled {
+.scrolled {
   margin: 10px 0 0 50px;
 }
 
-.logo__img {
+.img {
   width: 100%;
 }

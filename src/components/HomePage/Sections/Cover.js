@@ -1,18 +1,18 @@
 import React from 'react';
 import scrollIntoView from 'scroll-into-view';
 
-import './Cover.css';
+import styles from './Cover.css';
 import Arrow from '../../../images/arrow.png';
 
 const topOffset = 65;
 
 const Cover = () => (
-  <section className="cover" id="cover">
-    <h1 className="cover__title">Simplex</h1>
-    <h2 className="cover__subtitle">Designer &amp; Developer</h2>
+  <section className={styles.container} id="cover">
+    <h1 className={styles.title}>Simplex</h1>
+    <h2 className={styles.subtitle}>Designer &amp; Developer</h2>
 
     <img
-      className="cover__arrow"
+      className={styles.arrow}
       src={Arrow}
       alt="Arrow"
       onClick={() => {

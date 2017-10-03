@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Footer.css';
+import styles from './Footer.css';
 
 const Footer = () => (
-  <footer className="footer">
-    <p className="copyright">&copy; 2017 Simplex</p>
+  <footer className={styles.footer}>
+    <p className={styles.copyright}>&copy; 2017 Simplex</p>
   </footer>
 );
 export default Footer;

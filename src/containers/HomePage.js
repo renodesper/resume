@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './HomePage.css';
+import styles from './HomePage.css';
 
 import Header from '../components/Shared/Header';
 import Cover from '../components/HomePage/Sections/Cover';
@@ -10,7 +10,7 @@ import Contact from '../components/HomePage/Sections/Contact';
 import Footer from '../components/Shared/Footer';
 
 const HomePage = () => (
-  <div className="homepage">
+  <div className={styles.homepage}>
     {/* HEADER */}
     <Header />
 

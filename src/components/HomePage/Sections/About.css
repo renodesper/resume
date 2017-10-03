@@ -1,24 +1,24 @@
-.about {
+.container {
   min-height: 100%;
 }
 
-.about__avatar {
+.avatar {
   width: 200px;
 
   transform: scale(1.0);
   transition: all 300ms;
 }
 
-.about__avatar:hover {
+.avatar:hover {
   transform: scale(1.1);
   transition: all 300ms;
 }
 
-.about__name {
+.name {
   font-size: 25px;
 }
 
-.about__description {
+.description {
   width: 700px;
   margin: 0 auto 0 auto;
 }

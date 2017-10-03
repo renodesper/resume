@@ -1,8 +1,8 @@
-.contact {
+.container {
   min-height: 100%;
 }
 
-.contact__form__input--global {
+.input {
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
   margin-bottom: 10px;
@@ -12,18 +12,18 @@
   outline: none;
 }
 
-.contact__form__textinput {
+.textinput {
   color: #494949;
   padding-left: 10px;
   width: 552px;
   height: 30px;
 }
 
-.contact__form__textinput:first-child {
+.textinput:first-child {
   margin-top: 10px;
 }
 
-.contact__form__textarea {
+.textarea {
   color: #494949;
   padding-left: 10px;
   width: 550px;
@@ -31,7 +31,7 @@
   resize: none;
 }
 
-.contact__form__submit {
+.submit {
   background-color: #f0f0f0;
   color: #494949;
   width: 566px;
@@ -42,7 +42,7 @@
   transition: all 300ms;
 }
 
-.contact__form__submit:hover {
+.submit:hover {
   background-color: #494949;
   color: #f0f0f0;
   transition: all 300ms;

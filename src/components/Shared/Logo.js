@@ -1,17 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import scrollIntoView from 'scroll-into-view';
 
-import './Logo.css';
+import { getHeaderTransparency } from '../../actions';
+
+import styles from './Logo.css';
 import LogoPath from '../../images/logo.png';
 
 class Logo extends React.Component {
   render() {
-    const logoClass = this.props.isScrolled ? 'logo logo--scrolled' : 'logo';
+    const logoClass = this.props.transparent ? styles.container : `${styles.container} ${styles.scrolled}`;
 
     return (
       <div className={logoClass}>
         <img
-          className="logo__img"
+          className={styles.img}
           src={LogoPath}
           alt="Logo"
           onClick={() => {
@@ -23,4 +27,10 @@ class Logo extends React.Component {
   }
 }
 
-export default Logo;
+Logo.propTypes = {
+  transparent: PropTypes.bool.isRequired,
+};
+
+const mapStateToProps = state => getHeaderTransparency(state.header.transparent);
+
+export default connect(mapStateToProps)(Logo);

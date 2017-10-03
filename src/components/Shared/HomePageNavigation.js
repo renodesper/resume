@@ -1,20 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import scrollIntoView from 'scroll-into-view';
 
-import './HomePageNavigation.css';
+import { getHeaderTransparency } from '../../actions';
+
+import styles from './HomePageNavigation.css';
 
 const topOffset = 65;
 
 class HomePageNavigation extends React.Component {
   render() {
-    const navigationClass = this.props.isScrolled ? 'navigation navigation--scrolled' : 'navigation';
+    const navigationClass = this.props.transparent ? styles.container : `${styles.container} ${styles.scrolled}`;
 
     return (
       <nav className={navigationClass}>
         <ul>
-          <li className="navigation__list">
+          <li className={styles.list}>
             <a
-              className="navigation__list__item"
+              className={styles.item}
               onClick={() => {
                 scrollIntoView(document.getElementById('cover'));
               }}
@@ -23,9 +27,9 @@ class HomePageNavigation extends React.Component {
             >Home</a>
           </li>
 
-          <li className="navigation__list">
+          <li className={styles.list}>
             <a
-              className="navigation__list__item"
+              className={styles.item}
               onClick={() => {
                 scrollIntoView(document.getElementById('about'), {
                   align: { topOffset },
@@ -36,9 +40,9 @@ class HomePageNavigation extends React.Component {
             >About</a>
           </li>
 
-          <li className="navigation__list">
+          <li className={styles.list}>
             <a
-              className="navigation__list__item"
+              className={styles.item}
               onClick={() => {
                 scrollIntoView(document.getElementById('work'), {
                   align: { topOffset },
@@ -49,9 +53,9 @@ class HomePageNavigation extends React.Component {
             >Work</a>
           </li>
 
-          <li className="navigation__list">
+          <li className={styles.list}>
             <a
-              className="navigation__list__item"
+              className={styles.item}
               onClick={() => {
                 scrollIntoView(document.getElementById('contact'), {
                   align: { topOffset },
@@ -67,4 +71,10 @@ class HomePageNavigation extends React.Component {
   }
 }
 
-export default HomePageNavigation;
+HomePageNavigation.propTypes = {
+  transparent: PropTypes.bool.isRequired,
+};
+
+const mapStateToProps = state => getHeaderTransparency(state.header.transparent);
+
+export default connect(mapStateToProps)(HomePageNavigation);

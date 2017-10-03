@@ -1,4 +1,4 @@
-.cover {
+.container {
   background: url('../../../images/cover.jpg');
   background-position: center center;
   background-size: cover;
@@ -7,17 +7,17 @@
   min-height: calc(100% - 200px);
 }
 
-.cover__title {
+.title {
   margin: 0 auto 0 auto;
   font-size: 110px;
 }
 
-.cover__subtitle {
+.subtitle {
   margin: 0 auto 0 auto;
   font-size: 25px;
 }
 
-.cover__arrow {
+.arrow {
   width: 32px;
   margin-top: 150px;
 
@@ -25,7 +25,7 @@
   transition: all 200ms;
 }
 
-.cover__arrow:hover {
+.arrow:hover {
   opacity: 1;
   transition: all 200ms;
 }

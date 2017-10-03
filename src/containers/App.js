@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './App.css';
+import styles from './App.css';
 
 import HomePage from './HomePage';
 
 const App = () => (
-  <div className="reactroot">
+  <div className={styles.reactroot}>
     <HomePage />
   </div>
 );
