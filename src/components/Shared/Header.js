@@ -25,7 +25,7 @@ class Header extends React.Component {
   }
 
   isTransparent() {
-    const maxScroll = 80;
+    const maxScroll = 20;
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     const status = currentScroll >= maxScroll
       ? this.props.dispatch(setHeaderTransparency(false))

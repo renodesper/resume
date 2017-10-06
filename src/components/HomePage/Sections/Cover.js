@@ -8,8 +8,8 @@ const topOffset = 65;
 
 const Cover = () => (
   <section className={styles.container} id="cover">
-    <h1 className={styles.title}>Simplex</h1>
-    <h2 className={styles.subtitle}>Designer &amp; Developer</h2>
+    <h1 className={styles.title}>Boy Sandy G. A.</h1>
+    <h2 className={styles.subtitle}>Software Developer</h2>
 
     <img
       className={styles.arrow}
