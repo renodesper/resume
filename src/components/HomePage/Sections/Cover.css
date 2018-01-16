@@ -1,8 +1,5 @@
 .container {
-  background: url('../../../images/cover.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #f0f0f0;
   padding-top: 200px;
   min-height: calc(100% - 200px);
 }

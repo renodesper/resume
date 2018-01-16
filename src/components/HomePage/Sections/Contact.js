@@ -7,7 +7,7 @@ import axios from 'axios';
 import styles from './Contact.css';
 
 const InnerForm = ({ values, errors, touched, handleChange, handleSubmit, isSubmitting }) => (
-  <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit} id="contact-form">
     <input
       className={`${styles.input} ${styles.textinput}`}
       type="email"
@@ -82,7 +82,7 @@ const ContactForm = withFormik({
         a49d1abeaa6a11e79d494851b7d65d67: 'c03bc9d2aa6a11e79d494851b7d65d67',
       },
     }).then((response) => {
-      console.log(`response: ${response}`);
+      document.getElementById('contact-form').reset();
     }).catch((error) => {
       console.log(`error: ${error}`);
     });
